@@ -1,4 +1,4 @@
-import { defaults, findAllPages, getMDX } from "../../";
+import { defaults, findAllPages, getMDX } from "mdx-site";
 
 const { defaultContentDir } = defaults;
 
