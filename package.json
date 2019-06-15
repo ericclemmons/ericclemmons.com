@@ -13,6 +13,8 @@
     "start": "npx serve dist"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "benefit": "^1.1.1",
     "mdx-site": "^1.0.0"
   }
 }
