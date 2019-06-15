@@ -1,4 +1,6 @@
-import React from "react";
+/** @jsx jsx */
+// @ts-ignore
+import { jsx } from "benefit/react";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/oceanicNext";
 

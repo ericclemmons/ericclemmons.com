@@ -1,4 +1,6 @@
-import React from "react";
+/** @jsx jsx */
+// @ts-ignore
+import { jsx } from "benefit/react";
 import { Navigation } from "./Navigation";
 import ResponsiveBadge from "./ResponsiveBadge";
 
@@ -7,9 +9,12 @@ export default function Layout(props: any) {
     <div className="antialiased font-serif text-gray-800">
       {process.env.NODE_ENV === "development" && <ResponsiveBadge />}
 
-      <div className="hidden md:block bg-gray-100 w-1/2 h-screen fixed right-0 z-0" />
+      <div
+        className="hidden md:block bg-gray-100 w-1/2 h-screen fixed right-0 z-0"
+        key="background"
+      />
 
-      <div className="md:flex mx-auto z-10 relative md:max-w-4xl">
+      <div className="md:flex mx-auto z-10 relative md:max-w-4xl" key="nav">
         <div className="md:w-64">
           <nav
             className="md:fixed md:w-64 p-8 md:p-4 text-white md:max-h-screen md:overflow-y-auto"

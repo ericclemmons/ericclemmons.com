@@ -1,4 +1,6 @@
-import React from "react";
+/** @jsx jsx */
+// @ts-ignore
+import { jsx } from "benefit/react";
 
 export default function Card({ cta, href, children, title }: any) {
   return (

@@ -1,4 +1,6 @@
-import React from "react";
+/** @jsx jsx */
+// @ts-ignore
+import { jsx } from "benefit/react";
 // @ts-ignore
 import { SocialIcon } from "react-social-icons";
 

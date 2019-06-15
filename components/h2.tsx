@@ -1,3 +1,6 @@
+/** @jsx jsx */
+// @ts-ignore
+import { jsx } from "benefit/react";
 import React from "react";
 
 export default function h2(props: any) {
