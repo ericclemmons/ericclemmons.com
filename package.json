@@ -8,8 +8,9 @@
   "scripts": {
     "build": "mdx-site build",
     "deploy": "npx now",
+    "dev": "mdx-site",
     "now-build": "yarn build",
-    "start": "mdx-site"
+    "start": "npx serve dist"
   },
   "dependencies": {
     "mdx-site": "^1.0.0"
