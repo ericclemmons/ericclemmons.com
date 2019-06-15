@@ -9,8 +9,7 @@
     "build": "mdx-site build",
     "deploy": "npx now",
     "dev": "mdx-site",
-    "now-build": "yarn build",
-    "start": "npx serve dist"
+    "now-build": "yarn build"
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",
