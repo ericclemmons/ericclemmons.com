@@ -10,7 +10,10 @@ export const posts = async () => {
   const mdxs = await Promise.all(pages.map(page => getMDX(page)));
 
   mdxs.sort((a, b) => {
-    return b.attributes.firstPublishedAt - a.attributes.firstPublishedAt;
+    return (
+      new Date(b.attributes.firstPublishedAt || b.attributes.date).getTime() -
+      new Date(a.attributes.firstPublishedAt || a.attributes.date).getTime()
+    );
   });
 
   return mdxs;
