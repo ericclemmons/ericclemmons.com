@@ -20,12 +20,21 @@ export default function Layout(props: any) {
             <Navigation />
           </nav>
         </div>
-
-        <main
-          className="bg-gray-100 flex-1 p-8 pt-0 min-h-screen md:max-w-2xl overflow-x-auto"
+        <div
+          className="bg-gray-100 flex-1 min-h-screen md:max-w-2xl overflow-x-auto"
           style={{ boxShadow: "-3px 0 4px rgba(0, 0, 0, 0.12)" }}
-          {...props}
-        />
+        >
+          <main className="p-8 pt-0">{props.children}</main>
+          <footer
+            className="border-t text-center p-8 text-gray-700"
+            style={{
+              background:
+                "linear-gradient(to right, white 85%, rgba(255, 255, 255, 0))"
+            }}
+          >
+            &copy; Eric Clemmons {new Date().getFullYear()}
+          </footer>
+        </div>
       </div>
     </div>
   );
