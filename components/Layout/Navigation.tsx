@@ -26,7 +26,7 @@ export const Navigation = () => {
         <img
           alt="Picture of Eric Clemmons"
           className="rounded-full border-4 shadow-md mb-4 w-56 h-56 mx-auto"
-          src="/eric.jpg"
+          src="/static/eric.jpg"
         />
       </a>
 
