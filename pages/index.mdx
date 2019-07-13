@@ -1,10 +1,9 @@
----
-description: I specialize in building remote teams & developing full-stack applications with technologies such as TypeScript, React, & GraphQL.
----
+import MDX from "@mdx-js/runtime";
+import components from "../components";
 
 ## Open-Source Projects
 
-![Illustration of projects](undraw_portfolio_update_nqhs.svg)
+![Illustration of projects](/static/undraw_portfolio_update_nqhs.svg)
 
 - [`mdx-site`](https://github.com/ericclemmons/mdx-site) - Static site generator powered by TypeScript, MDX, & React.
 
@@ -24,12 +23,12 @@ description: I specialize in building remote teams & developing full-stack appli
 
 ## Blog
 
-![Illustration of a page](undraw_online_page_cq94.svg)
+![Illustration of a page](/static/undraw_online_page_cq94.svg)
 
 <section>
-  {posts.map(({ attributes, href, Snippet }) => (
-    <Card cta="Read →" href={href} key={href} title={attributes.title}>
-      <Snippet />
+  {props.posts.map(({ excerpt, href, metadata }) => (
+    <Card cta="Read →" href={href} key={href} title={metadata.title}>
+      <MDX components={components}>{excerpt}</MDX>
     </Card>
   ))}
 </section>
