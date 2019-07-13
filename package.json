@@ -6,13 +6,29 @@
   "author": "Eric Clemmons <eric@smarterspam.com>",
   "license": "MIT",
   "scripts": {
-    "build": "mdx-site build",
+    "build": "next build",
     "deploy": "npx now",
-    "dev": "mdx-site",
+    "dev": "next",
+    "preexport": "next build",
+    "export": "next export",
     "now-build": "yarn build",
-    "start": "npx serve dist"
+    "start": "next start"
   },
   "dependencies": {
-    "mdx-site": "^1.0.0"
+    "@mdx-js/loader": "^1.0.27",
+    "@mdx-js/runtime": "^1.0.27",
+    "gray-matter": "^4.0.2",
+    "next": "^9.0.1",
+    "prism-react-renderer": "^0.1.7",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-social-icons": "^4.1.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@types/webpack-env": "^1.14.0"
   }
 }
