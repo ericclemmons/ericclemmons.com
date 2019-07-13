@@ -7,10 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "next build",
+    "postbuild": "next export -o dist",
     "deploy": "npx now",
     "dev": "next",
-    "preexport": "next build",
-    "export": "next export",
     "now-build": "yarn build",
     "start": "next start"
   },
