@@ -1,4 +1,4 @@
-import { defaults, findAllPages, getMDX } from "mdx-site";
+import { defaults, findAllPages, getPage } from "mdx-site";
 
 const { defaultContentDir } = defaults;
 
@@ -7,7 +7,7 @@ export const posts = async () => {
     page.includes("/blog/")
   );
 
-  const mdxs = await Promise.all(pages.map(page => getMDX(page)));
+  const mdxs = await Promise.all(pages.map(page => getPage(page)));
 
   mdxs.sort((a, b) => {
     return (
