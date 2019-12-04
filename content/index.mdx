@@ -2,6 +2,16 @@
 description: I specialize in building remote teams & developing full-stack applications with technologies such as TypeScript, React, & GraphQL.
 ---
 
+## Latest Post
+
+<section>
+  {posts.slice(0, 1).map(({ attributes, href, Snippet }) => (
+    <Card cta="Read →" href={href} key={href} title={attributes.title}>
+      <Snippet />
+    </Card>
+  ))}
+</section>
+
 ## Open-Source Projects
 
 ![Illustration of projects](undraw_portfolio_update_nqhs.svg)
